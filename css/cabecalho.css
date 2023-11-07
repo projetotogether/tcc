@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+:root {
+  --magenta: #ef1668;
+  --black: #000;
+  --lightgray: #d9d9d9;
+  --darkgray: #1d2029;
+  --white: #fff;
+  --orange: #FF914D;
+  --blue: #061BB0;
+}
+
+
+body{
+  overflow-x: hidden;
+  height: 100vh;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.container-s {
+  position: relative;
+  width: 100%;
+}
+
+/* SUBIR PARA COBRIR O CHECKBOX */
+.navigation {
+  top: 0;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: var(--darkgray);
+  border-left: 10px solid var(--darkgray);
+  transition: 0.5s;
+  overflow: hidden;
+  left: 0;
+  /* superior - direita - embaixo - esquerda */
+  border-top-right-radius: 1% 1%;  
+  font-family: 'Montserrat', sans-serif;
+  z-index: 40;
+}
+
+/* ------------------------------------------------------ */
+
+.profile{
+  text-align: center;
+  padding: 20px;
+  margin: 50px 0 10px;
+}
+
+.profile img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100px;
+  border: 2px solid var(--white);
+}
+
+.profile h3{
+  /* superior - direita e esquerda - inferior */
+  margin: 10px 0 30px;
+  color: var(--white);
+}
+
+/* ------------------------------------------------------- */
+/* COLOCAR ESSA CONFIGURAÇÃO PARA QUANDO ESTIVER FECHADO */
+.logomarca-cab{
+  position: absolute;
+  top: 18%;
+  left: 1%;
+  cursor: cover;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.logomarca-cab img{
+  width: 60px;
+  height: 60px;
+}
+
+
+.navigation.active > .logomarca-cab{
+  transform: opacity 250ms 0.2s;
+  opacity: 1;
+}
+/* ---------------- */
+
+.menu-cab{
+/*   position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu-cab li{
+  position: relative;
+  width: 110%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-left: -35px;
+  margin-bottom: 17px;
+/*   left: -5px; */
+}
+
+.menu-cab li a {
+  position: relative;
+  display: block;
+  width: 111.5%;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transform: border 0.2s linear;
+  font-weight: bold;
+  /* mudei o white para magenta*/
+}
+
+.menu-cab li:hover a > .menu-cab li a{
+  border-bottom: none;
+}
+
+.navigation.active > .menu-cab li a{
+  border-bottom: none;
+  transition: border-bottom 250ms linear;
+}
+
+.menu-cab li a .icon-cab {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  color: var(--white);
+}
+
+.menu-cab li a .icon-cab ion-icon {
+  font-size: 2em;
+  align-items: start;
+}
+
+.menu-cab li a .title-cab {
+  position: relative;
+  display: block;
+  padding: 0 18px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------ */
+/* tecnicamente transferido */
+.menu-cab li.bookmarked a::before{
+  content: "";
+  transform: rotate(135deg);
+  position: absolute;
+  right: -22px;
+  border-radius: 8px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: red;
+  transition: right 240ms ease-in-out;
+/*   border-radius: 50%; */
+/*   box-shadow: 35px 35px 0 10px var(--white); */
+  pointer-events: none;
+}
+
+.navigation.active > .menu-cab li.bookmarked a::before{
+  right: 190px;
+  transition: right 250ms 0.1s;
+}
+
+/* ----------------------------------------------------- */
+
+.navigation ul li:hover{
+  padding-top: 2px;
+  background: var(--white);
+  border: none;
+  text-transform: uppercase;
+}
+
+.menu-cab li:hover a,
+.menu-cab li:hover a .icon-cab{
+/*  mudar a cor dos caracteres  */
+  color: var(--magenta);
+  border: none;
+}
+
+/* CONFIGURAÇÃO DA SETINHA */
+/* mudar para o hover comum */
+.menu-cab li:hover a::before {
+  content: "";
+  position: absolute;
+  right: 22px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+}
+
+.menu-cab li:hover a::after{
+  content: "";
+  position: absolute;
+  right: 22px;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--white);
+  pointer-events: none;
+}
+
+.navigation.active > .menu-cab li:hover a::before{
+  right: 190px;
+  transition: right 250ms 0.1s;
+}
+
+/* ----------------------------------------------------- */
+
+.toggle-icon div{
+  background: var(--white);
+  width: 100%;
+  height: 3px;
+  transition: all .3s;
+}
+
+.toggle-icon{
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 33px;
+  height: 33px;
+  z-index: 1;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.bar-center{
+  margin: 7px 0;
+}
+
+.toggle-icon.active > .bar-top{
+  transform: rotate(135deg);
+  margin-top: 18.75px;
+}
+
+.toggle-icon.active > .bar-center{
+  opacity: 0;
+}
+
+.toggle-icon.active > .bar-bottom{
+  transform: rotate(-135deg);
+  margin-top: -18.75px;
+}
+
+/* ------------------------------------------ */
+
+.header {
+  position: fixed;
+  width: calc(100% - 310px);
+  left: 310px;
+  min-height: 100vh;
+  background: var(--white);
+  transition: 0.5s;
+  top: 0;
+  
+}
+
+.header.active {
+  width: calc(100% - 84px);
+  max-height: 70px;
+  left: 84px;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  /* z-index: 1; */
+}
+
+.active{
+  z-index: 0 !important;
+  transition-property: z-index;
+  transition: all 0.1s;
+  transition-timing-function: linear !important;
+}
+
+.sumir{
+  opacity: 0;
+}

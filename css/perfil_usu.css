@@ -1,0 +1,181 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+img{
+object-fit:cover;
+}
+.foto_principal{
+  width: 20rem;
+  height: 20rem;
+  flex-shrink: 0;
+  border-radius: 161.561px;
+  background: lightgray 50%;
+  margin-left: 15%;
+  display: flex;
+  overflow: hidden;
+  top: 7%;
+  position: absolute;
+  left: 15%;
+}
+.foto1{
+max-width: 340%;
+max-height: 340%;
+border-radius: 13px;
+background: url(<path-to-image>),lightgray 50%;
+margin-top: 10%;
+display: flex;
+float: left;
+margin-right: 5%;
+overflow: hidden;
+}
+
+.fot01-delimitada {
+width: 100%; /* Preenche o contêiner horizontalmente */
+height: auto; /* Mantém a proporção original da imagem */
+}
+
+.foto2{
+width: 340px;
+height: 340px;
+border-radius: 13px;
+background: url(<path-to-image>),lightgray 50%;
+margin-top: 10%;
+display: flex;
+float: left;
+margin-right: 5%;
+overflow: hidden;
+}
+
+.fot02-delimitada {
+width: 100%; /* Preenche o contêiner horizontalmente */
+height: auto; /* Mantém a proporção original da imagem */
+object-fit: cover;
+}
+
+.foto3{
+width: 340px;
+height: 340px;
+border-radius: 13px;
+background: url(<path-to-image>),lightgray 50%;
+margin-top: 10%;
+display: flex;
+float: left;
+margin-right: 5%;
+overflow: hidden;
+}
+
+.fot03-delimitada {
+width: 100%; /* Preenche o contêiner horizontalmente */
+height: auto; /* Mantém a proporção original da imagem */
+object-fit: cover;
+}
+
+.linha_fotos{
+  height: 60%;
+  top: -52%;
+  left: 13%;
+  display: inline-flex;
+  /* padding-bottom: 5%; */
+  position: relative;
+/* height: 60%;
+margin-top: 10%;
+margin-left: 14%;
+display: flex;
+padding-bottom: 5%;
+position: relative absolute; */
+}
+
+.infos{
+background-color: none;
+margin-left: 35%;
+margin-top: -11%
+
+}
+.n{
+background-color: none;
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+top: 22%;
+left: 53% ;
+position: absolute;
+}
+.d{
+font-size: 30px;
+font-style: normal;
+top: 30%;
+left: 53%;
+max-width: 36%;
+max-heigh: 12%;
+position: absolute;
+}
+.desc{
+width: 36%;
+heigth: 100%;
+overflow: scroll;
+overflow-x: hidden;
+border-radius: 10px;
+ /*background: #dee0df; */
+}
+.desc::-webkit-scrollbar {
+	  width: 10px;
+	  border-radius: 30px;
+}
+.desc::-webkit-scrollbar-thumb {
+	  background: #cf189bab;
+border-radius: 30px; }
+.desc::-webkit-scrollbar-track {
+	  background: #f8f8ff; 
+	 	}
+
+.infos2{
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+left: 53%;
+top: 45%;
+height: -10%;
+position: absolute;
+}
+
+.phone{
+font-size: 20px;
+font-style: normal;
+font-weight: 600; 
+}
+
+.container {
+margin-left: 20rem;
+}
+
+.moldura{
+margin-top: 5%;
+margin-left: 11%;
+width: 1272px;
+height: 808px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 7px solid #cf189bab;
+background: rgba(217, 217, 217, 0.00);
+}
+
+.curso{
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+left: 53%;
+top: 18%;
+position: absolute;
+}
+
+.editar{
+    width: 100%;
+    height: 100%;
+}
+.subeditar{
+    position: absolute;
+    border-radius: 50%;
+    background: #cf189b;
+    /* text-decoration: none; */
+    width: 10%;
+}

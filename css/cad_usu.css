@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+form{
+    width: 100%;
+}
+
+.container-cad{
+    position: absolute;
+    width: 100%;
+    left: 84px;
+    /* top: 90px; */
+    height: 100vh;
+    /* background-image: url(../img/background/fundo.svg); */
+    background: url(../img/background/fundo.svg), lightgray -136304425747426600px -3292377185572427000px / 326840957902569600% 335272625822039400% no-repeat;
+
+    /* filter: blur(5px); */
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    margin-top: -10px;
+}
+
+/* .card-glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 1250px;
+    height: 850px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    margin: 5% 20%;
+} */
+
+
+.block{
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+
+.cab-card{
+    z-index: 1;
+    opacity: 1;
+    margin: 8% 10% 15%;
+    align-items: center;
+}
+
+.cab-card img{
+    width: 70px;
+    height: 70px;
+}
+
+.cab-card span{
+    font-size: 50px;
+    font-weight: bold;
+    font-display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cardbox-glass{
+    height: 86vh;
+    width: 75%;
+    padding: 0,20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    margin: 5% 17%;
+    position: relative;
+    border-radius: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    box-shadow: -15px 17px 17px rgba(25, 25, 25, 0.25);
+}
+
+.input-container-cad{
+    width: 90%;
+    height: 5%;
+    position: relative;
+    margin: 10% 2%;
+}
+
+.input-container-descad{
+    width: 90%;
+    height: 20%;
+    position: relative;
+    margin: 12% 2%;
+    
+}
+
+.input-container-generalcad{
+    width: 90%;
+    height: 40%;
+    position: relative;
+    margin: 12% 2%;
+}
+
+/* FAZER TODAS AS MESMAS COISAS FEITAS NO INPUT-TEXT no arquivo dele */
+.number-input{
+    padding: 0.8rem;
+    width: 30%;
+    height: 100%;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    background: #D9D9D9;
+    outline: none;
+    transition: all .3s;
+    color: #000;
+    font-size: 20px;
+    margin: 0 1.4%; 
+
+}
+
+
+/* cabecalho guys */
+
+.pagination-container {
+    margin: 0 auto;
+}
+
+.pagination-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}

@@ -1,0 +1,272 @@
+:root{
+    --darkgray: #1d2029;
+    --magenta: #ef1668;
+    --black: #000;
+    --lightgray: #d9d9d9;
+    --white: #fff;
+    --orange: #FF914D;
+    --blue: #061BB0;
+    --darkpurple: #3b4153;
+    --darkblue: #030e5b;
+    --pastelpink: #f7cde8;
+    --pastelorange: #f7e0cd;
+    --pastelblue: #ced7f8;
+    --gradienth: linear-gradient(0deg, rgba(239,22,104,1) 0%, rgba(255,145,77,1) 52%, rgba(6,27,176,1) 100%);
+    --gradienth1: linear-gradient(0deg,rgba(6,27,176,1) 0%, rgba(255,145,77,1) 47%, rgba(239,22,104,1) 100%);
+    --gradientv: linear-gradient(90deg, rgba(255,145,77,1) 18%, rgba(239,22,104,1) 47%, rgba(6,27,176,1) 100%);
+
+}
+
+/* Paginação ----------------------- */
+.pagination-container {
+    margin: 0 auto;
+}
+
+.pagination-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    height: 92%;
+}
+
+.prev-btn, .next-btn{
+    cursor: pointer;
+    border: none !important;
+    margin: 20px !important;
+}
+
+.btn:disabled{
+    border: none !important;
+}
+  
+.buttons-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -13px;
+}
+
+.label-pagination{
+    display: block !important;
+    height: 230px;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-pagination2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+}
+
+/* ------------------------------------------------ */
+
+
+.quadro{
+    width: 75%;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #ADD8E6;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: -550px;
+    padding: 10px;
+}
+
+.struct-form{
+    z-index: 1;
+    /* margin-left: 150px; */
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    width: 1145px;
+    height: 900px;
+    flex-shrink: 0;
+    float: left;
+    border-radius: 13px;
+    border: 1px solid #F3F3F3;
+    background: var(--white);
+    color: var(--black);
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(5px 5px 0px #FBB728);
+  /*   display: grid; */
+    margin: 2% auto 0;
+}
+
+.title-form{
+    color: var(--black);
+    padding-top: 1.2%;
+}
+
+
+.q-form{
+    width: 100%;
+    margin: 2% auto;
+}
+
+.qs-form{
+    margin: 4%;
+}
+
+.qss-form{
+    margin: 1% 0;
+}
+
+.qq-form{
+    width: 90%;
+    margin: 2% 5%;
+}
+
+.page1, .page4, .page5, .page6, .page7, .page8, .page9, .page10,
+.page11, .page12, .page13, .page14, .page15, .page16, .page18, 
+.page19, .page20{ width: 1000px; }
+
+.page2{ width: 950px; }
+
+.page3{ width: 775px; }
+
+.page17{
+    width: 1085px;
+}
+
+
+
+/* ---------------------------------------------------- */
+.radio-item input[type="radio"]{
+    display: none;
+}
+
+.radio-item + .radio-item{
+    margin-top: 15px;
+}
+
+.radio-item label{ /*  */
+    display: block;
+    float: left;
+    margin: 4%;
+
+    padding: 10px 55px;
+
+    background: var(--pastelorange);
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+
+    max-width: 250px;
+
+    white-space: nowrap; 
+    position: relative;
+    transition: .4s ease-in-out 0s;
+
+    filter: drop-shadow(2px 2px 0px #FBB728);
+}
+
+.radio-item label:before,
+.radio-item label:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.radio-item label::after{
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--magenta);
+    left: 20px;
+    top: calc(50% - 12px);
+    
+}
+
+.radio-item label::before{
+    background: var(--magenta);
+    height: 10px;
+    width: 10px;
+    left: 25px;
+    top: calc(50% - 7px);
+    transform: scale(5);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out 0s;
+}
+
+.radio-item input[type="radio"]:checked ~ label{
+    border-color: var(--magenta);
+}
+
+.radio-item input[type="radio"]:checked ~ label::before{
+    opacity: 1;
+    visibility:visible;
+    transform: scale(1);
+}
+
+
+.radio-item label span{
+    display: block;
+    text-align: center;
+    margin: 7% 0 0 10%;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--darkblue);
+    cursor: pointer;
+    padding: 0.5%;
+}
+
+.link:hover{
+    color: var(--magenta);
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(1px 1px 0px #FBB728);
+    /* padding: 0.5%; */
+}
+
+
+
+#label{
+    padding: 10px 60px;
+    max-width: 100%;
+    float: inherit;
+    margin: 1.7% 0;
+}
+
+#span{
+    text-align: justify;
+    margin: 0;
+}
+
+#struct-memes{
+    max-width: 325px;
+    margin: 1.5% 1.6%;
+}
+
+#memes{
+    width: 250px;
+    height: 250px;
+}
+
+#enviar{
+    margin-left: -7.8%;
+    margin-right: 4.8%;
+    width: 10%;
+}
+
+#resetar{
+    margin-right: 5%;
+    width: 10%;
+}

@@ -1,0 +1,216 @@
+.quadro_pink{
+    width: 40%;
+    height: 55%;
+    border-radius: 20px;
+    background: #CF189C;
+   margin-top: 12%;
+   margin-left: 29%;
+}
+
+.apresentacao_email{
+    display: flex;
+    width: 50%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+.cod_email{
+    display: flex;
+    width: 55%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 22%;
+    margin-top: -4%;
+}
+
+
+.btnenv{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+      margin-left: 32%;
+      width: 239px;
+      height: 47px;
+      flex-shrink: 0;
+      border-radius: 30px;
+      border: none;
+      background: #D9D9D9;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      color: #CF189C;
+      margin-top: 10%;
+      margin-left: 33%;
+}
+.spaced-input {
+    padding: 10px; /* Add padding to create space around the input text */
+    letter-spacing: 5px; /* Add letter spacing to space out the characters */
+    border: 1px solid #ccc; /* Add a border for a visible input field */
+    border-radius: 5px; /* Add rounded corners to the input */
+    font-size: 16px; /* Set the font size */
+    width: 50%;
+    height: 20%;
+    left: 586px;
+    top: 115px;
+    font-size: 35px;
+    border-style: none;
+    background: #D9D9D9;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25%;
+    text-align: center;
+}
+
+/* -------------EMAIL - MENSAGEM ----------------- */
+:root{
+    --darkgray: #1d2029;
+    --magenta: #ef1668;
+    --black: #000;
+    --lightgray: #d9d9d9;
+    --white: #fff;
+    --orange: #FF914D;
+    --blue: #061BB0;
+    --darkpurple: #3b4153;
+    --darkblue: #030e5b;
+    --pastelpink: #f7cde8;
+    --pastelorange: #f7e0cd;
+    --pastelblue: #ced7f8;
+    --gray: #ccc;
+}
+table{
+    border-spacing: 0;
+}
+
+td{
+    padding: 0;
+}
+
+td img{
+    border: 0;
+}
+
+.container-e{
+    background: var(--lightgray);
+    width: 100%;
+    table-layout: fixed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.main-e{
+    width: 100%;
+    background: var(--white);
+    margin: 0 auto;
+    max-width: 600px;
+    border-spacing: 0;
+    color: var(--darkpurple);
+    filter: drop-shadow(5px 5px 0px #FBB728);
+    border-radius: 10px;
+
+}
+
+.section-1-e{
+    height: 8;
+    background: var(--gray);
+}
+
+.section-2-e{
+    width: 100%;
+}
+
+.section-2-e tr td{
+    text-align: center;
+    padding: 15px;
+    display: flex;
+}
+
+.section-2-e tr td a{
+  width: 100%;
+   text-decoration: none;
+   color: black;
+   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.section-2-e tr td a span{
+  margin: 20px 0;
+  display: flex;
+  font-size: 30px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.section-2-e tr td span{
+  margin: 20px 0;
+  display: flex;
+  font-size: 20px;
+  font-family: 'League Spartan', sans-serif;
+  line-height: 27px;
+  width: 100%;
+}
+
+.section-2-e tr td a img{
+    width: 180;
+    display: flex;
+    float: left;
+}
+
+.banner-e{
+    width: 100%;
+}
+
+.banner-e td a img{
+    width: 600;
+    max-width: 100%;
+}
+
+.section-3-e{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-3-e tr td{
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--magenta);
+    color: var(--white);
+}
+
+.section-4-e{
+    width: 100%;
+}
+
+.buttons-e{
+    background: var(--darkblue);
+    color:var(--white);
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+
+.section-5-e{
+    height: 5;
+    background: var(--gray);
+}
+
+#title-email{
+  margin: 27px 0;
+  display: flex;
+  font-size: 30px;
+  line-height: 27px;
+  width: auto;
+}
